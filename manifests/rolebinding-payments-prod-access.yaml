@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: checkout-serviceaccount-pods-secrets
+  namespace: payments-prod
+subjects:
+  - kind: ServiceAccount
+    name: checkout-serviceaccount
+    namespace: checkout-prod
+roleRef:
+  kind: Role
+  name: payments-prod-pods-secrets
+  apiGroup: rbac.authorization.k8s.io

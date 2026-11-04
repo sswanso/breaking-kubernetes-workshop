@@ -1,0 +1,54 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: payments-prod
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: checkout-prod
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: inventory-prod
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: shipping-prod
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: billing-prod
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: auth-prod
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: notifications-prod
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: search-prod
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: analytics-prod
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: user-profile-prod
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: crown-jewels

@@ -1,0 +1,17 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - namespaces.yaml
+  - serviceaccount.yaml
+  - clusterrole-namespace-lister.yaml
+  - clusterrolebinding-namespace-lister.yaml
+  - role-payments-prod-access.yaml
+  - rolebinding-payments-prod-access.yaml
+  - role-billing-prod-access.yaml
+  - rolebinding-billing-prod-access.yaml
+  - clusterrole-cluster-admin-binder.yaml
+  - clusterrolebinding-billing-cluster-admin-binder.yaml
+  - secret-flag-1.yaml
+  - secret-flag-2.yaml
+  - secret-flag-3.yaml
